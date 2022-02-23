@@ -24,14 +24,14 @@ cd images
 fswebcam -r 1280x720 --no-banner test_image.jpg
 ```
 
-[First Test Image - Pi](images/test_image_pi1.jpg)
+![First Test Image - Pi](images/test_image_pi1.jpg)
 
 I found the colors to be super green-washed, so I hooked the camera up to my laptop and captured another sample image:
 
-<!-- [First Test Image - Laptop](images/test_image_laptop1.jpg) -->
+<!-- ![First Test Image - Laptop](images/test_image_laptop1.jpg) -->
 
 Obviously this is a Pi issue since this webcam is capable of taking proper images when hooked up to my laptop. I played with some of the fswebcam arguments and found that the first few images need to be discarded in order to get a properly color-balanced picture. A delay of a few seconds did not solve the trick but a discard of 10 seemed to produce good results the majority of the time.
 
-<!-- [Second Test Image - Pi](images/test_image_pi2.jpg) -->
+<!-- ![Second Test Image - Pi](images/test_image_pi2.jpg) -->
 
-A very poorly thought out python script was written `beard_fidget_monitor/mist/capture_training_images.py` and I'd let that run for a few hours over the course of a few days in order to collect a large enough sample set with different lighting and angles to properly train the model. 
+A very poorly thought out python script was written `beard_fidget_monitor/misc/capture_training_images.py` and I'd let that run for a few hours over the course of a few days in order to collect a large enough sample set with different lighting and angles to properly train the model. 
